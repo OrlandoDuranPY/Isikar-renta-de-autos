@@ -1,2 +1,2 @@
-# Isikar-renta-de-autos
+# Isikar
 Proyecto escolar
