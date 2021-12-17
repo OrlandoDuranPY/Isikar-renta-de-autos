@@ -103,7 +103,7 @@ nav {
   height: 0.3rem;
   width: 0;
   left: 0;
-  bottom: -.5rem;
+  bottom: -0.5rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -174,5 +174,25 @@ nav {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.acerca-de .contenedor .texto {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.acerca-de .contenedor .imagen {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.acerca-de .contenedor .imagen img {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
