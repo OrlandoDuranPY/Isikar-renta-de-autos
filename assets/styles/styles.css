@@ -13,6 +13,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -56,6 +57,7 @@ a {
   display: inline-block;
   padding: 1rem 1.5rem;
   color: #fff;
+  font-size: 1.3rem;
   background-color: #00a1ff;
   background-image: linear-gradient(45deg, #00a1ff 0%, #1c41ff 100%);
   -webkit-box-shadow: 2px 2px 11px 1px rgba(0, 0, 0, 0.2);
@@ -89,7 +91,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 
 .contenedor-navbar .menu a {
@@ -113,7 +115,7 @@ nav {
 }
 
 .contenedor-navbar .logo {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 500;
   color: #00a1ff;
   letter-spacing: 1px;
@@ -123,6 +125,7 @@ nav {
   margin-right: 2.5rem;
   letter-spacing: 1px;
   padding: 0 1rem;
+  font-size: 1.3rem;
 }
 
 .menu a:last-of-type {
@@ -136,23 +139,21 @@ nav {
 /* Hero */
 .hero {
   width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero .contenedor {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
-  -webkit-column-gap: 4rem;
-          column-gap: 4rem;
+  width: 100%;
 }
 
 .hero .contenedor .texto {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  max-width: 50rem;
 }
 
 .hero .contenedor .texto span {
