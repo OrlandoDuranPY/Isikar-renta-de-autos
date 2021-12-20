@@ -163,10 +163,16 @@ nav {
 
 .hero .contenedor {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero .contenedor .texto {
-  max-width: 50rem;
+  max-width: 50%;
 }
 
 .hero .contenedor .texto span {
@@ -177,6 +183,25 @@ nav {
 
 .hero .contenedor .texto p {
   margin-bottom: 3rem;
+}
+
+.hero .contenedor .imagen {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 50%;
+  text-align: center;
+}
+
+.hero .contenedor .imagen img {
+  width: 80%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hero .contenedor .imagen img:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .acerca-de {
