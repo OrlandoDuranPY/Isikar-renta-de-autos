@@ -1,6 +1,7 @@
 /* Variables */
 $colorBg: #f4f4f6;
 $azul: #00a1ff;
+$negro: #222222;
 
 /* Generales */
 html {
@@ -33,9 +34,12 @@ h1 {
   font-size: 5rem;
 }
 
-h2,
-h3 {
+h2 {
   font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
 }
 
 a {
@@ -125,7 +129,6 @@ nav {
 
 .menu a {
   margin-right: 2.5rem;
-  letter-spacing: 1px;
   padding: 0 1rem;
   font-size: 1.3rem;
 }
@@ -186,6 +189,63 @@ nav {
   }
 }
 
+.caracteristicas {
+  width: 100%;
+  background-color: #222222;
+  background-image: linear-gradient(0deg, #222222 0%, #2b2e43 100%);
+
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    .tarjeta {
+      padding: 3.5rem 2rem;
+      text-align: center;
+      color: #fff;
+
+      .img {
+        width: 7rem;
+        height: 7rem;
+        margin: auto;
+        background-color: rgba($negro, 0.5);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        img {
+          width: 60%;
+        }
+      }
+
+      h3 {
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    .tarjeta:hover {
+      background-color: #00a1ff;
+      background-image: linear-gradient(45deg, #00a1ff 0%, #1c41ff 100%);
+      -webkit-box-shadow: 2px 2px 11px 1px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 2px 2px 11px 1px rgba(0, 0, 0, 0.2);
+      box-shadow: 2px 2px 11px 1px rgba(0, 0, 0, 0.2);
+      // transform: scale(1.1);
+      transform: translateY(-3rem);
+      transition: 0.3s;
+
+      .img{
+        background-color: rgba($negro, 0.9);
+      }
+    }
+  }
+}
+
 /* Footer */
 .footer {
   width: 100%;
@@ -201,7 +261,6 @@ nav {
   }
 
   h3 {
-    font-size: 1.6rem;
     font-weight: 500;
   }
 
@@ -215,7 +274,7 @@ nav {
     opacity: 1;
   }
 
-  i{
+  i {
     font-size: 3rem;
   }
 
@@ -235,9 +294,9 @@ nav {
     padding-bottom: 2rem;
   }
 
-  .derechos-reservados{
+  .derechos-reservados {
     padding-top: 4rem;
-    p{
+    p {
       font-size: 1.2rem;
       text-align: center;
     }
