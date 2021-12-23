@@ -89,10 +89,16 @@ li {
 /* Barra de navegación */
 nav {
   width: 100%;
+  position: fixed;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 100;
+}
+
+.nav-fixed {
   background-color: #fff;
-  position: absolute;
-  left: 0;
-  top: 0;
+  -webkit-box-shadow: 2px 2px 11px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 11px 1px rgba(0, 0, 0, 0.1);
 }
 
 .contenedor-navbar {
@@ -206,6 +212,7 @@ nav {
 
 .acerca-de {
   width: 100%;
+  margin-bottom: 20rem;
 }
 
 .acerca-de .contenedor {
