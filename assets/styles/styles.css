@@ -157,28 +157,31 @@ nav {
 
 /* Hero */
 .hero {
-  width: 100%;
   height: 100vh;
+}
+
+.hero .contenedor-hero {
+  width: 100%;
+  height: 100%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #00a1ff;
+  background-image: linear-gradient(45deg, #00a1ff 0%, #1c41ff 100%);
 }
 
 .hero .contenedor {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
 .hero .contenedor .texto {
-  max-width: 50%;
+  margin: auto;
+  padding-top: 20rem;
 }
 
 .hero .contenedor .texto span {
@@ -191,33 +194,7 @@ nav {
   margin-bottom: 3rem;
 }
 
-.hero .contenedor .imagen {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 50%;
-  text-align: center;
-}
-
-.hero .contenedor .imagen img {
-  width: 80%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.hero .contenedor .imagen img:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-}
-
 /* Muckups */
-.muckups {
-  width: 100%;
-  background-color: #00a1ff;
-  background-image: linear-gradient(45deg, #00a1ff 0%, #1c41ff 100%);
-  padding: 10rem 0;
-}
-
 .muckups .contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,17 +202,19 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
 }
 
 .muckups .contenedor img {
-  height: 90vh;
-  top: -50%;
+  width: 100%;
 }
 
 /* Acerca de */
 .acerca-de {
   width: 100%;
   margin-bottom: 20rem;
+  margin-top: 50rem;
 }
 
 .acerca-de .contenedor {

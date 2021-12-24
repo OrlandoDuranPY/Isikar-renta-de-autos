@@ -149,18 +149,25 @@ nav {
 
 /* Hero */
 .hero {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
+height: 100vh;
 
+  .contenedor-hero {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #00a1ff;
+    background-image: linear-gradient(45deg, #00a1ff 0%, #1c41ff 100%);
+
+  }
   .contenedor {
     width: 100%;
-    display: flex;
-    align-items: center;
+    text-align: center;
 
     .texto {
-      max-width: 50%;
+      margin: auto;
+      padding-top: 20rem;
       span {
         font-size: 4rem;
         font-weight: 700;
@@ -171,35 +178,18 @@ nav {
         margin-bottom: 3rem;
       }
     }
-
-    .imagen {
-      align-items: center;
-      max-width: 50%;
-      text-align: center;
-
-      img {
-        width: 80%;
-        transition: 0.3s;
-      }
-      img:hover {
-        transform: scale(1.01);
-      }
-    }
   }
 }
 
 /* Muckups */
 .muckups {
-  width: 100%;
-  background-color: #00a1ff;
-  background-image: linear-gradient(45deg, #00a1ff 0%, #1c41ff 100%);
-  padding: 10rem 0;
+  // transform: translateY(-40%);
   .contenedor {
     display: flex;
     justify-content: center;
+    transform: translateY(-40%);
     img {
-      height: 90vh;
-      top: -50%;
+      width: 100%;
     }
   }
 }
@@ -208,6 +198,7 @@ nav {
 .acerca-de {
   width: 100%;
   margin-bottom: 20rem;
+  margin-top: 50rem;
 
   .contenedor {
     display: grid;
