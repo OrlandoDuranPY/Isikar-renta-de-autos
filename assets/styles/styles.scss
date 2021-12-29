@@ -60,6 +60,7 @@ li {
 .contenedor {
   max-width: 120rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 
@@ -81,3 +82,70 @@ li {
   transform: scale(1.02);
 }
 
+
+/* --- Navbar --- */
+#navbar{
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: 0.3s;
+
+  .contenedor-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    transition: 0.3s;
+
+    .logo{
+      font-size: 3rem;
+      color: #fff;
+      transition: 0.3s;  
+    }
+
+    .menu{
+      a{
+        margin-right: 2.5rem;
+        color: #fff;
+        transition: 0.3s;
+      }
+      a:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/* --- Navbar sticky --- */
+#navbar.nav-fixed{
+  background-color: #fff;
+}
+
+#navbar.nav-fixed .contenedor-navbar{
+  padding: 1rem 0;
+
+  .logo, .menu a{
+    color: $negro;
+  }
+  
+}
+
+/* --- Hero --- */
+
+#hero{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+  .contenedor-hero{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
