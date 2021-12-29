@@ -65,21 +65,25 @@ li {
 
 .btn {
   display: inline-block;
-  padding: 1rem 1.5rem;
+  padding: .5rem 1.5rem;
   color: #fff;
-  font-size: 1.3rem;
-  background-color: #00a1ff;
-  background-image: linear-gradient(45deg, #00a1ff 0%, #1c41ff 100%);
-  -webkit-box-shadow: 2px 2px 11px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 2px 11px 1px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+  border-radius: 1.5rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .btn:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  opacity: 0.8;
+}
+
+.btn-sesion {
+  border: 1px solid #f4f4f6;
+}
+
+.btn-white {
+  background-color: #f4f4f6;
+  color: #222222;
 }
 
 /* --- Navbar --- */
@@ -87,6 +91,7 @@ li {
   width: 100%;
   position: fixed;
   background-color: transparent;
+  font-size: 1.4rem;
   top: 0;
   left: 0;
   z-index: 10;
@@ -104,7 +109,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -127,6 +132,10 @@ li {
   margin-right: 0;
 }
 
+#navbar .contenedor-navbar .menu a:hover {
+  opacity: .6;
+}
+
 /* --- Navbar sticky --- */
 #navbar.nav-fixed {
   background-color: #fff;
@@ -136,8 +145,12 @@ li {
   padding: 1rem 0;
 }
 
-#navbar.nav-fixed .contenedor-navbar .logo, #navbar.nav-fixed .contenedor-navbar .menu a {
+#navbar.nav-fixed .contenedor-navbar .logo, #navbar.nav-fixed .contenedor-navbar .menu a, #navbar.nav-fixed .contenedor-navbar .btn-sesion {
   color: #222222;
+}
+
+#navbar.nav-fixed .contenedor-navbar .btn-sesion {
+  border-color: #222222;
 }
 
 /* --- Hero --- */
@@ -160,5 +173,18 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#hero .contenedor-hero .contenedor .texto {
+  text-align: center;
+  color: #f4f4f6;
+}
+
+#hero .contenedor-hero .contenedor .texto h1 {
+  font-weight: normal;
+}
+
+#hero .contenedor-hero .contenedor .texto p {
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=styles.css.map */
