@@ -66,7 +66,7 @@ li {
 
 .btn {
   display: inline-block;
-  padding: .5rem 1.5rem;
+  padding: 1rem 2rem;
   color: #fff;
   border-radius: 1.5rem;
   transition: 0.3s;
@@ -159,9 +159,12 @@ li {
 #hero{
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-color: $negro;
+  overflow: hidden;
+  position: relative;
 
   .contenedor-hero{
+    position: relative;
     width: 100%;
     height: 100%;
     display: flex;
@@ -181,5 +184,23 @@ li {
       }
     }
   }
+
+  .waves{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    background-image: url(../img/waves.svg);
+    background-size: cover;
+    background-position: bottom;
+    z-index: 2;
+  }
+}
+
+
+/* --- Acerca de --- */ 
+#acerca-de{
+  position: relative;
 
 }
