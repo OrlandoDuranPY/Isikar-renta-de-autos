@@ -135,7 +135,7 @@ li {
 
 /* --- Navbar sticky --- */
 #navbar.nav-fixed {
-  background-color: #fff;
+  background-color: rgba($colorBg, 0.98);
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
@@ -163,6 +163,7 @@ li {
   background-color: $negro;
   overflow: hidden;
   position: relative;
+  margin-bottom: 10rem;
 
   .contenedor-hero {
     position: relative;
@@ -192,11 +193,21 @@ li {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 30rem;
+    height: 50rem;
     background-image: url(../img/waves.svg);
     background-size: cover;
     background-position: bottom;
     z-index: 2;
+  }
+}
+
+/* --- Muckup --- */
+#muckup{
+  width: 100%;
+  text-align: center;
+
+  img{
+    height: 600px;
   }
 }
 
