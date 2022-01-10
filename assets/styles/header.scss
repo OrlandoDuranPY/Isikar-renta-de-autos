@@ -5,6 +5,7 @@
   background-image: url(../img/header-bg.svg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 4rem;
 
   .navbar {
@@ -48,24 +49,30 @@
     }
   } //Fin del navbar
 
-  .contenedor {
+  .hero {
+    width: 100%;
     display: flex;
-    .texto {
-      width: 50%;
+    align-items: center;
+    .contenedor {
+      display: flex;
+      .texto {
+        width: 50%;
 
-      h1,p {
-        color: $blanco;
-        margin-bottom: 2rem;
+        h1,
+        p {
+          color: $blanco;
+          margin-bottom: 2rem;
 
-        span {
-          font-weight: 600;
+          span {
+            font-weight: 600;
+          }
         }
       }
-    }
-    .img {
-      width: 50%;
-      img {
-        width: 80%;
+      .img {
+        width: 50%;
+        img {
+          width: 80%;
+        }
       }
     }
   }

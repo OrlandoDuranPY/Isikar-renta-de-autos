@@ -61,6 +61,9 @@ h1 {
   height: 100vh;
   background-color: #4361ee;
   background-image: url(../img/header-bg.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 4rem;
 }
 
@@ -117,30 +120,42 @@ h1 {
   font-size: 2.5rem;
 }
 
-.header .contenedor {
+.header .hero {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .hero .contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header .contenedor .texto {
+.header .hero .contenedor .texto {
   width: 50%;
 }
 
-.header .contenedor .texto h1, .header .contenedor .texto p {
+.header .hero .contenedor .texto h1,
+.header .hero .contenedor .texto p {
   color: #f8f9fa;
   margin-bottom: 2rem;
 }
 
-.header .contenedor .texto h1 span, .header .contenedor .texto p span {
+.header .hero .contenedor .texto h1 span,
+.header .hero .contenedor .texto p span {
   font-weight: 600;
 }
 
-.header .contenedor .img {
+.header .hero .contenedor .img {
   width: 50%;
 }
 
-.header .contenedor .img img {
+.header .hero .contenedor .img img {
   width: 80%;
 }
 /*# sourceMappingURL=styles.css.map */
