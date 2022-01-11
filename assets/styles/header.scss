@@ -1,3 +1,9 @@
+/* --- Variables --- */
+$azulPrincipal: #4361ee;
+$azulSecundario: #233fbb;
+$blanco: #f8f9fa;
+
+
 .header {
   position: relative;
   width: 100%;
@@ -23,20 +29,12 @@
       justify-content: space-between;
       align-items: center;
       padding: 1rem 4rem;
-      background-color: rgba($color: $blanco, $alpha: 0.3);
+      background-color: rgba($color: $blanco, $alpha: 0.4);
       border-radius: 1rem;
 
-      .logo,
       .menu a {
         color: $blanco;
       }
-
-      .logo span {
-        font-size: 4rem;
-        font-weight: 600;
-        font-family: "Open Sans", sans-serif;
-      }
-
       .menu {
         display: flex;
         align-items: center;

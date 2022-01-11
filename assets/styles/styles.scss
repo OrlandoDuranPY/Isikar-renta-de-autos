@@ -1,11 +1,13 @@
 /* --- Variables --- */
 $azulPrincipal: #4361ee;
+$azulSecundario: #233fbb;
 $blanco: #f8f9fa;
 
 /* --- Globales --- */
 html {
   box-sizing: border-box;
   font-size: 62.5%; /*1 rem = 10 px*/
+  user-select: none;
 }
 
 *,
@@ -33,6 +35,14 @@ h1 {
   font-weight: normal;
 }
 
+h3{
+  font-size: 2rem;
+}
+
+ul{
+  list-style: none;
+}
+
 .contenedor,
 .contenedor-navbar {
   max-width: 120rem;
@@ -56,4 +66,6 @@ h1 {
 }
 
 /* --- Secciones --- */
-@import "header";
+@import 'header';
+
+@import 'footer';
