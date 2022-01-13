@@ -2,7 +2,7 @@
 $azulPrincipal: #4361ee;
 $azulSecundario: #233fbb;
 $blanco: #f8f9fa;
-$negro : #212529;
+$negro: #212529;
 
 /* --- Globales --- */
 html {
@@ -36,17 +36,23 @@ h1 {
   font-weight: normal;
 }
 
-h2{
+h2 {
   font-size: 3rem;
   font-weight: 500;
 }
 
-h3{
+h3 {
   font-size: 2rem;
 }
 
-ul{
+ul {
   list-style: none;
+}
+
+.titulo {
+  text-align: center;
+  color: $negro;
+  margin-bottom: 5rem;
 }
 
 .contenedor,
@@ -55,11 +61,11 @@ ul{
   margin: 0 auto;
 }
 
-section{
+section {
   padding: 10rem 0;
 }
 
-.contenedor{
+.contenedor {
   overflow: hidden;
 }
 
@@ -79,8 +85,16 @@ section{
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
+.alinear-derecha {
+  text-align: right;
+}
+
+.alinear-izquierda {
+  text-align: left;
+}
+
 /* --- Secciones --- */
-@import 'header';
-@import 'que-es';
-@import 'caracteristicas';
-@import 'footer';
+@import "header";
+@import "que-es";
+@import "caracteristicas";
+@import "footer";

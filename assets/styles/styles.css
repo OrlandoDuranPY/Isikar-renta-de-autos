@@ -49,6 +49,12 @@ ul {
   list-style: none;
 }
 
+.titulo {
+  text-align: center;
+  color: #212529;
+  margin-bottom: 5rem;
+}
+
 .contenedor,
 .contenedor-navbar {
   max-width: 120rem;
@@ -78,6 +84,14 @@ section {
           transform: translateY(-0.2rem);
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.alinear-derecha {
+  text-align: right;
+}
+
+.alinear-izquierda {
+  text-align: left;
 }
 
 /* --- Secciones --- */
@@ -230,6 +244,70 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+/* --- Variables --- */
+.caracteristicas .contenedor {
+  color: #212529;
+}
+
+.caracteristicas .contenedor h2 {
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+.caracteristicas .contenedor .multiplataforma,
+.caracteristicas .contenedor .interfaz,
+.caracteristicas .contenedor .registros,
+.caracteristicas .contenedor .seguro {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.caracteristicas .contenedor .multiplataforma .img,
+.caracteristicas .contenedor .multiplataforma .texto,
+.caracteristicas .contenedor .interfaz .img,
+.caracteristicas .contenedor .interfaz .texto,
+.caracteristicas .contenedor .registros .img,
+.caracteristicas .contenedor .registros .texto,
+.caracteristicas .contenedor .seguro .img,
+.caracteristicas .contenedor .seguro .texto {
+  width: 100%;
+}
+
+.caracteristicas .contenedor .multiplataforma .img img,
+.caracteristicas .contenedor .interfaz .img img,
+.caracteristicas .contenedor .registros .img img,
+.caracteristicas .contenedor .seguro .img img {
+  text-align: center;
+  width: 100%;
+}
+
+.caracteristicas .contenedor .multiplataforma .texto,
+.caracteristicas .contenedor .interfaz .texto,
+.caracteristicas .contenedor .registros .texto,
+.caracteristicas .contenedor .seguro .texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.caracteristicas .contenedor .multiplataforma .texto p,
+.caracteristicas .contenedor .interfaz .texto p,
+.caracteristicas .contenedor .registros .texto p,
+.caracteristicas .contenedor .seguro .texto p {
+  line-height: 2;
 }
 
 /* --- Variables --- */
