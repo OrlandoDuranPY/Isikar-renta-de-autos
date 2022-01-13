@@ -2,6 +2,7 @@
 $azulPrincipal: #4361ee;
 $azulSecundario: #233fbb;
 $blanco: #f8f9fa;
+$negro : #212529;
 
 /* --- Globales --- */
 html {
@@ -35,6 +36,11 @@ h1 {
   font-weight: normal;
 }
 
+h2{
+  font-size: 3rem;
+  font-weight: 500;
+}
+
 h3{
   font-size: 2rem;
 }
@@ -47,6 +53,14 @@ ul{
 .contenedor-navbar {
   max-width: 120rem;
   margin: 0 auto;
+}
+
+section{
+  padding: 10rem 0;
+}
+
+.contenedor{
+  overflow: hidden;
 }
 
 .btn {
@@ -67,5 +81,6 @@ ul{
 
 /* --- Secciones --- */
 @import 'header';
-
+@import 'que-es';
+@import 'caracteristicas';
 @import 'footer';

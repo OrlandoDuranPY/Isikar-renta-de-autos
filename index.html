@@ -18,6 +18,9 @@
     <!--CSS-->
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -26,7 +29,7 @@
     <header class="header">
         <nav class="navbar">
             <div class="contenedor-navbar">
-                    <img class="logo" src="assets/img/logo.svg" alt="">
+                <img class="logo" src="assets/img/logo.svg" alt="">
                 <div class="menu">
                     <a href="#">Inicio</a>
                     <a href="#">Producto</a>
@@ -58,6 +61,36 @@
         </div>
         <!--hero-->
     </header>
+
+    <main class="que-es">
+        <div class="contenedor" data-aos="fade-up" data-aos-duration="600">
+            <div class="texto">
+                <h2>¿Qué es Isikar?</h2>
+                <p>Isikar es un software especializado en la renta de automóviles.
+                    Tiene la capacidad de adaptarse a las necesidades de cada empresa
+                    para tener la mejor experiencia posible.
+                </p>
+                <p>Gracias a Isikar serás capáz de agilizar el proceso de alquiler y
+                    aumentar la productividad de manera increíble.
+                </p>
+            </div>
+            <!--Texto-->
+            <div class="mockup">
+                <img src="assets/img/mockups.png" alt="Imagen Mockups">
+            </div>
+            <!--Mockup-->
+        </div>
+    </main> <!--Que es-->
+
+    <section class="caracteristicas">
+        <div class="contenedor">
+            <h2>Descubre porque nuestros clientes prefieren Isikar.</h2>
+            <div class="multiplataforma"></div>
+            <div class="interfaz"></div>
+            <div class="registros"></div>
+            <div class="seguro"></div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="contenedor">
@@ -94,10 +127,29 @@
             </div>
             <div class="siguenos">
                 <h3>Síguenos</h3>
-
+                <div class="siguenos-contenedor">
+                    <a href="#">
+                        <!-- <img src="assets/img/facebook.png" alt="Imagen Facebook"> -->
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="#">
+                        <!-- <img src="assets/img/github.png" alt="Imagen Github"> -->
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="#">
+                        <!-- <img src="assets/img/instagram.png" alt="Imagen Instagram"> -->
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <a href="#">
+                        <!-- <img src="assets/img/twitter.png" alt="Imagen Twitter"> -->
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <script src="js/AOS.js"></script>
 </body>
 
 </html>

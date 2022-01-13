@@ -36,6 +36,11 @@ h1 {
   font-weight: normal;
 }
 
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
 h3 {
   font-size: 2rem;
 }
@@ -48,6 +53,14 @@ ul {
 .contenedor-navbar {
   max-width: 120rem;
   margin: 0 auto;
+}
+
+section {
+  padding: 10rem 0;
+}
+
+.contenedor {
+  overflow: hidden;
 }
 
 .btn {
@@ -183,9 +196,47 @@ ul {
 }
 
 /* --- Variables --- */
+.que-es {
+  padding: 10rem 0;
+}
+
+.que-es .contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.que-es .contenedor .texto, .que-es .contenedor .mockup {
+  width: 100%;
+}
+
+.que-es .contenedor .texto {
+  color: #212529;
+}
+
+.que-es .contenedor .texto h2 {
+  margin-bottom: 2rem;
+}
+
+.que-es .contenedor .texto p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.que-es .contenedor .mockup img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* --- Variables --- */
 .footer {
   width: 100%;
   background-color: #4361ee;
+  background-image: url(../img/footer.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -202,10 +253,22 @@ ul {
 
 .footer .contenedor h3 {
   margin-bottom: 2rem;
+  color: #f8f9fa;
 }
 
 .footer .contenedor ul li {
   margin-bottom: 0.5rem;
+}
+
+.footer .contenedor ul li a {
+  color: #f8f9fa;
+  font-size: 1.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .contenedor ul li a:hover {
+  opacity: 0.8;
 }
 
 .footer .contenedor .logo img {
@@ -217,5 +280,24 @@ ul {
   color: #f8f9fa;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+}
+
+.footer .contenedor .siguenos .siguenos-contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .contenedor .siguenos .siguenos-contenedor a {
+  color: #f8f9fa;
+  font-size: 3.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .contenedor .siguenos .siguenos-contenedor a:hover {
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
 }
 /*# sourceMappingURL=styles.css.map */
