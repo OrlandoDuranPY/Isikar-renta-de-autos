@@ -1,0 +1,13 @@
+/* --- Variables --- */
+$azulPrincipal: #4361ee;
+$azulSecundario: #233fbb;
+$blanco: #f8f9fa;
+$negro: #212529;
+
+.clientes{
+    background-color: $azulPrincipal;
+    .contenedor{
+        text-align: center;
+        color: $blanco;
+    }
+}

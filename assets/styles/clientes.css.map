@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,uBAAuB;AAMvB,AAAA,SAAS,CAAA;EACL,gBAAgB,EANJ,OAAO;CAWtB;;AAND,AAEI,SAFK,CAEL,WAAW,CAAA;EACP,UAAU,EAAE,MAAM;EAClB,KAAK,EAPJ,OAAO;CAQX",
+    "sources": [
+        "clientes.scss"
+    ],
+    "names": [],
+    "file": "clientes.css"
+}

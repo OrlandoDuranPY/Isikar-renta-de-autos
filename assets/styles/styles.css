@@ -311,6 +311,20 @@ section {
 }
 
 /* --- Variables --- */
+.clientes {
+  background-color: #4361ee;
+}
+
+.clientes .contenedor {
+  text-align: center;
+  color: #f8f9fa;
+}
+
+.clientes .contenedor h2 {
+  font-size: 4rem;
+}
+
+/* --- Variables --- */
 .footer {
   width: 100%;
   background-color: #4361ee;
