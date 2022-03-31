@@ -1,0 +1,64 @@
+/* Variables */
+/* Estilos globales */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+*,
+*:before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #f2f2f2;
+}
+
+/* Utilidades */
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Secciones*/
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: white;
+}
+
+.navbar .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.5rem 0;
+}
+
+.navbar .contenedor .menu a {
+  margin-right: 2rem;
+}
+
+.navbar .contenedor .menu a:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=styles.css.map */

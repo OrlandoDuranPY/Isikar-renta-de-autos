@@ -1,0 +1,59 @@
+/* Variables */
+$grisClaro: #f2f2f2;
+
+/* Estilos globales */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+  user-select: none;
+}
+
+*,
+*:before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: $grisClaro;
+}
+
+/* Utilidades */
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Secciones*/
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: white;
+
+  .contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+
+    .logo{}
+
+    .menu{
+        a{
+            margin-right: 2rem;
+        }
+        a:last-child{
+            margin-right: 0;
+        }
+    }
+  }
+}
