@@ -1,5 +1,8 @@
 /* Variables */
 $grisClaro: #f2f2f2;
+$blanco: #fff;
+$texto: #212629;
+$colorPrincipal: #5890FF;
 
 /* Estilos globales */
 html {
@@ -20,7 +23,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
-  background-color: $grisClaro;
+  background-color: $blanco;
 }
 
 /* Utilidades */
@@ -33,28 +36,115 @@ a{
     text-decoration: none;
 }
 
+.boton{
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: $texto;
+  border-radius: 0.5rem;
+  color: $blanco;
+  transition: 0.3s;
+}
+.boton:hover{
+  transform: scale(1.03);
+}
+
 /* Secciones*/
 
 /* Navbar */
 .navbar {
   width: 100%;
-  background-color: white;
 
-  .contenedor {
+  .contenedor{
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
     align-items: center;
+    padding: 5rem 0;
 
-    .logo{}
+    a{
+      font-size: 2rem;
+      color: $texto;
+    }
+  }
+}
 
-    .menu{
-        a{
-            margin-right: 2rem;
-        }
-        a:last-child{
-            margin-right: 0;
-        }
+/* Header */
+.header{
+  padding-top: 5rem;
+  .contenedor{
+    .contenedor-texto{
+      margin: auto;
+      text-align: center;
+      color: $texto;
+      width: 85rem;
+      margin-bottom: 10rem;
+      .p-reducido{
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-weight: 600;
+        opacity: 0.8;
+        margin-bottom: 2rem;
+        // color: $colorPrincipal;
+      }
+      h1{
+        font-size: 5rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+      }
+      p{
+        font-size: 1.6rem;
+        opacity: 0.8;
+        margin-bottom: 3rem;
+      }
+    }
+    .mockup{
+      width: 100%;
+      text-align: center;
+      img{
+        width: 70%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+/* Footer */
+.footer{
+  background-color: $grisClaro;
+  padding: 5rem;
+
+  img{
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  a{
+    color: $texto;
+    opacity: 1;
+    transition: 0.3s;
+    font-weight: 500;
+  }
+  a:hover{
+    opacity: 0.8;
+  }
+
+  .menu-grid{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+
+    h2{
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    a{
+      margin-bottom: 1rem;
+    }
+
+    .columna{
+      display: flex;
+      flex-direction: column;
     }
   }
 }

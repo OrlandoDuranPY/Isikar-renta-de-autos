@@ -24,7 +24,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 /* Utilidades */
@@ -37,11 +37,25 @@ a {
   text-decoration: none;
 }
 
+.boton {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: #212629;
+  border-radius: 0.5rem;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
 /* Secciones*/
 /* Navbar */
 .navbar {
   width: 100%;
-  background-color: white;
 }
 
 .navbar .contenedor {
@@ -51,17 +65,108 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5rem 0;
 }
 
-.navbar .contenedor .menu a {
-  margin-right: 2rem;
+.navbar .contenedor a {
+  font-size: 2rem;
+  color: #212629;
 }
 
-.navbar .contenedor .menu a:last-child {
-  margin-right: 0;
+/* Header */
+.header {
+  padding-top: 5rem;
+}
+
+.header .contenedor .contenedor-texto {
+  margin: auto;
+  text-align: center;
+  color: #212629;
+  width: 85rem;
+  margin-bottom: 10rem;
+}
+
+.header .contenedor .contenedor-texto .p-reducido {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.header .contenedor .contenedor-texto h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.header .contenedor .contenedor-texto p {
+  font-size: 1.6rem;
+  opacity: 0.8;
+  margin-bottom: 3rem;
+}
+
+.header .contenedor .mockup {
+  width: 100%;
+  text-align: center;
+}
+
+.header .contenedor .mockup img {
+  width: 70%;
+  margin: auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #f2f2f2;
+  padding: 5rem;
+}
+
+.footer img {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.footer a {
+  color: #212629;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
+
+.footer .menu-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.footer .menu-grid h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer .menu-grid a {
+  margin-bottom: 1rem;
+}
+
+.footer .menu-grid .columna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=styles.css.map */
